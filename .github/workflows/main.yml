@@ -33,8 +33,8 @@ jobs:
           # Server address of Docker registry. If not set then will default to Docker Hub
           registry: vostro5590
           # Username used to log against the Docker registry
-          username: ${{ secret.DOCKERHUB.USER }}
+          username: ${{ secrets.DOCKERHUB.USER }}
           # Password or personal access token used to log against the Docker registry
-          password: ${{ secret.DOCKERHUB.PASS }}
+          password: ${{ secrets.DOCKERHUB.PASS }}
 
     
